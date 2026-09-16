@@ -1,0 +1,1 @@
+/home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/hello_cargo/target/debug/hello_cargo: /home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/hello_cargo/src/main.rs
