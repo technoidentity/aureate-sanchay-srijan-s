@@ -3,7 +3,7 @@ use std::cmp::Ordering;
 use rand::RngExt;
 use colored::*;
 
-
+// sanchay's guessing game
 fn main(){
     println!("Welcome to the guessing game sanchay");
 
