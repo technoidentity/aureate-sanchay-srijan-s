@@ -14,7 +14,11 @@ struct Order {
 }
 
 fn main() {
-    let order = Create_Order(12345,String::from("Sanchay srijan"),1000,OrderStatus::Delivered);
+    let order = Create_Order(12345,
+        String::from("Sanchay srijan"),
+        1000,
+        OrderStatus::Delivered
+    );
     println!("Hi {} , your order details:",order.Name);
     println!("Your order ID {}:",order.OrderID);
     println!("your order Amount:{}",order.Amount);

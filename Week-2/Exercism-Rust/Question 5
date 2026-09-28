@@ -1,0 +1,37 @@
+use std::collections::HashSet;
+
+pub fn anagrams_for<'a>(
+    word: &str,
+    possible_anagrams: &[&'a str],
+) -> HashSet<&'a str> {
+    // we need to do .lower for the word and also the canditates each time in the loop for the below loop
+    // we need to loop through the candidates and sort them and match each to word
+    // if its a match we gotta return ni the required format
+
+    let mut result = HashSet::new();
+    let lowercase_word = word.to_lowercase();
+    let mut chars_word: Vec<char> = lowercase_word.chars().collect();
+    chars_word.sort();
+    let sorted_word: String = chars_word.into_iter().collect();
+
+    for candidate in possible_anagrams {
+        let candidate_lowercase = candidate.to_lowercase();
+        if candidate_lowercase == lowercase_word
+        {
+            continue;
+        }        
+        let mut chars: Vec<char> = candidate_lowercase.chars().collect();
+        chars.sort();
+        let sorted: String = chars.into_iter().collect();
+
+        if sorted_word == sorted {
+            result.insert(*candidate);
+        }
+
+        
+        
+    }
+    result
+    
+    
+}

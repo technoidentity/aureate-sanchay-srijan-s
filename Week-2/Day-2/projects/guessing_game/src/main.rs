@@ -35,3 +35,8 @@ fn main(){
 
     }
 }
+
+
+// the below is where i worked on data types and functions and loops
+// i was able to understand multiple data types ,
+// in rust when there is a integer overflow , it will reset to 1 , like if i save a integer as 256 in the u8 that is the unsigned 8-bit integer/
