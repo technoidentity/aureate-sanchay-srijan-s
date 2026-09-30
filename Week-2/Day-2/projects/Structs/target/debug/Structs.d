@@ -1,1 +1,0 @@
-/home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Structs/target/debug/Structs: /home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Structs/src/main.rs

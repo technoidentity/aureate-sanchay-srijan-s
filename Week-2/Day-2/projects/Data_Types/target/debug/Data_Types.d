@@ -1,1 +1,0 @@
-/home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Data_Types/target/debug/Data_Types: /home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Data_Types/src/main.rs

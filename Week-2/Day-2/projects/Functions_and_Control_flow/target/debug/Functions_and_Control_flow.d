@@ -1,1 +1,0 @@
-/home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Functions_and_Control_flow/target/debug/Functions_and_Control_flow: /home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Functions_and_Control_flow/src/main.rs

@@ -1,1 +1,0 @@
-/home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Mini_project-Enum_and_Struct/target/debug/Mini_project-Enum_and_Struct: /home/technoidentity/Desktop/Learning\ and\ Development/Week-2/Day-2/projects/Mini_project-Enum_and_Struct/src/main.rs
