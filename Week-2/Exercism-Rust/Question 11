@@ -1,0 +1,19 @@
+pub fn factors(n: u64) -> Vec<u64> {
+    // todo!("This should calculate the prime factors of {n}")
+    let mut prime_factors : Vec<u64> = Vec::new();
+
+    let mut x = n;
+while x != 1 {
+    for i in 2..=x {
+        if x % i == 0 {
+            prime_factors.push(i);
+            x = x/i;
+            break;
+        }
+    }
+}
+    
+     prime_factors   
+    
+}
+

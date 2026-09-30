@@ -1,0 +1,17 @@
+pub fn reverse(input: &str) -> String {          
+    let mut output = String::new();
+          
+    for text in input.chars().rev(){
+
+        output.push(text);     
+    }
+    output  
+          
+}
+
+        
+
+          
+          
+
+        
