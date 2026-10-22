@@ -1,0 +1,30 @@
+pub fn find(array: &[i32], key: i32) -> Option<usize> {
+    // array.sort();
+    if array.is_empty(){
+        return None;
+    }
+
+    let mut l:usize = 0;
+    let mut h:usize = array.len()-1;
+    let mut ans= 0;
+    while l <= h{
+        let mut mid = l+(h-l)/2;
+
+        if array[mid] > key {
+            if mid == 0{
+                return None
+            }
+            h = mid-1;
+        }
+        else if array[mid] == key {
+            return Some(mid)
+            
+        }
+        else {
+            l = mid + 1;
+           
+        }
+    }
+    None
+    
+}

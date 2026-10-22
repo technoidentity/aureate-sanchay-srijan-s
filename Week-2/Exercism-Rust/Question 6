@@ -1,0 +1,13 @@
+pub fn is_armstrong_number(num: u32) -> bool {
+    let mut sum:u32 = 0;
+    let mut x:u32 = num;
+    let num_to_string:String = num.to_string();
+    let length = num_to_string.len() as u32;
+
+    while x > 0 {
+        let square = (x % 10).pow(length) ;
+        sum += square;
+        x/=10;
+    }
+    sum == num
+}
