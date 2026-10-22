@@ -60,7 +60,16 @@ impl Node {
             }
         }
     }
+    fn inorder(&self){
+        if let Some(left_node) =self.left.as_ref(){
+            left_node.inorder()
+        }
+        println!("{}",self.value);
 
+        if let Some(right_node) = self.right.as_ref(){
+            right_node.inorder();
+        }
+    }
     
 }
 
@@ -74,5 +83,6 @@ fn main(){
     root.insert(12);
 
     println!("{}", root.search(11));
+    root.inorder();
     
 }
