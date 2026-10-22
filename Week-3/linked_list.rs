@@ -44,6 +44,19 @@ impl LinkedList{
             current = &node.next;
         }
     }
+
+    fn length(&self){
+        let mut current = &self.head;
+
+        let mut count = 0;
+
+        while let Some(node) = current{
+            count += 1;
+            current = &node.next;
+
+        }
+        println!("{} is the length of this linked list",count);
+    }
 }
 
 fn main(){
@@ -63,4 +76,5 @@ fn main(){
     else{
         println!("\n{} not found in the linked list.",target);
     }
+    list.length();
 }
