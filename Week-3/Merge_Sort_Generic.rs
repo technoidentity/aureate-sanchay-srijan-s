@@ -2,7 +2,7 @@ use std::io;
 
 fn merge_sort<T:Ord+Clone>(arr:&mut Vec<T>){
     let len  = arr.len();
-    if len == 1{
+    if len <= 1{
         return ;
     }
 
@@ -19,7 +19,7 @@ fn merge_sort<T:Ord+Clone>(arr:&mut Vec<T>){
 
 fn merge<T:Ord+Clone>(arr:&mut Vec<T>,left:Vec<T>,right:Vec<T>){
     let mut i = 0;
-    let mut j = 0;          
+    let mut j = 0;
     let mut k = 0;
 
     while i < left.len() && j<right.len(){
@@ -38,7 +38,7 @@ fn merge<T:Ord+Clone>(arr:&mut Vec<T>,left:Vec<T>,right:Vec<T>){
         arr[k] = left[i].clone();
         i+=1;
         k+=1;
-    }   
+    }
 
     while j < right.len(){
         arr[k] = right[j].clone();
@@ -68,5 +68,5 @@ fn main() {
 
     println!("Sorted array: {:?}", input_arr);
 
-    
+
 }

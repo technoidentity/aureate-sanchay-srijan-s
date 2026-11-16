@@ -2,7 +2,7 @@ use std::io;
 
 fn merge_sort(arr:&mut Vec<i32>){
     let len  = arr.len();
-    if len == 1{
+    if len <= 1{
         return ;
     }
 
@@ -20,7 +20,7 @@ fn merge_sort(arr:&mut Vec<i32>){
 
 fn merge(arr:&mut Vec<i32>,left:Vec<i32>,right:Vec<i32>){
     let mut i = 0;
-    let mut j = 0;          
+    let mut j = 0;
     let mut k = 0;
 
     while i < left.len() && j<right.len(){
@@ -39,7 +39,7 @@ fn merge(arr:&mut Vec<i32>,left:Vec<i32>,right:Vec<i32>){
         arr[k] = left[i];
         i+=1;
         k+=1;
-    }   
+    }
 
     while j < right.len(){
         arr[k] = right[j];
@@ -69,5 +69,5 @@ fn main() {
 
     println!("Sorted array: {:?}", input_arr);
 
-    
+
 }

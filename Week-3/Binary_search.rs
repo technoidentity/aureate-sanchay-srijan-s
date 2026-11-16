@@ -33,6 +33,11 @@ fn main(){
         .filter_map(|s| s.parse::<i32>().ok())
         .collect::<Vec<i32>>();
 
+    if !input_arr.is_sorted() {
+        println!("Error: The array must be sorted!");
+        return;
+    }
+
     println!("Enter the target element: ");
     let mut target_input = String::new();
     io::stdin()

@@ -31,9 +31,13 @@ fn main(){
         .read_line(&mut input_arr)
         .expect("Failed to read line");
 
-    let input_arr = input_arr.trim().split_whitespace()
+    let mut input_arr = input_arr.trim().split_whitespace()
         .filter_map(|s| s.parse::<i32>().ok())
         .collect::<Vec<i32>>();
+
+    if !input_arr.is_sorted() {
+        input_arr.sort();
+    }
 
     println!("Enter the target element: ");
     let mut target_input = String::new();
