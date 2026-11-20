@@ -1,0 +1,23 @@
+pub fn abbreviate(phrase: &str) -> String {
+    let mut result = String::new();
+    let mut new_word = true;
+    let mut previous: Option<char> = None;
+    if phrase.is_empty(){
+        return result
+    }
+    // result.push(phrase.chars().nth(0).unwrap()
+    for ch in phrase.chars() {
+        if ch == ' ' || ch == '-'{
+            new_word = true;
+        }
+        else if ch.is_uppercase() && previous.is_some_and(|p| p.is_lowercase()) && !new_word{
+            result.push(ch);
+            }
+        else if ch.is_alphabetic() && new_word {
+            result.push(ch.to_ascii_uppercase());
+            new_word=false;
+        }
+        previous = Some(ch);
+    }
+    result.to_string()
+}
